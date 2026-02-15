@@ -24,9 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void go(View view) {
         num = Integer.parseInt(et1.getText().toString());
-        text.setText("click to enter the num");
         if (num <= 6) {
-            text.setText("number"+num);
+            text.setText("number "+num);
         }
         else {
             if (num % 7 == 0) {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             } else if ((num > 69) && (num < 80)) {
                 text.setText("BOOM!");
             } else {
-                text.setText("This is a click number:" + num);
+                text.setText("number " + num);
             }
         }
     }
